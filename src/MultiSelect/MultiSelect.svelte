@@ -1234,6 +1234,8 @@
                       ? "mixed"
                       : allSelected
                     : item.checked}
+                  aria-setsize={itemsToUse.length}
+                  aria-posinset={actualIndex + 1}
                   active={item.isSelectAll ? false : item.checked}
                   highlighted={highlightedIndex === actualIndex}
                   disabled={itemDisabled}
